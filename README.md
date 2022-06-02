@@ -31,35 +31,35 @@ e-mail. no seu terminal, execute os comandos:
 ## Criando um novo repositório
 Crie uma pasta ou abra o terminal no diretório e execute o comando:
 
-                                                           git init
+                          git init
 
 ## Rastreando os arquivos
 Podemos ver a situação dos arquivos no repositório Git com o comando:
 
-                                                       git status
+                         git status
 
 Você para adicionar arquivos no repositório devemos executar o seguinte comando:
                                                           
-                                                   git add "nome do arquivo"
+                         git add "nome do arquivo"
 
 Para fazer adicionar todos os ficheiros de uma só vez executamos o seguinte comando:
 
-                                                        git add *
+                         git add *
 
 ## Enviando alterações
 Para gravarmos as mudanças no repositório (fazer o commit), devemos executar o comando:
 
-                                  git commit -m "comentários das alterações que fizeste"
+                        git commit -m "comentários das alterações que fizeste"
 
 ## Preparando seu projeto para o GitHub
 Devemos agora apontar o repositório da nossa máquina para o repositório do GitHub.
                                                  
-                             git remote add origin https://github.com/seunome/repositorio.git
+                        git remote add origin https://github.com/seunome/repositorio.git
 
 ## Enviando as alterações para o GitHub
 Com o repositório remoto configurado, podemos enviar nossas mudanças para o GitHub basta executar o comando git push, da seguinte forma:
 
-                                                git push origin master
+                         git push origin master
 
 
 Com o comando anterior, enviamos as alterações para o repositório remoto configurado com o nome origin.
@@ -71,28 +71,28 @@ Password for ’https://fulanodasilva@github.com’
 ## Obtendo um repositório
 Para obter o código do projeto lá do GitHub, execute o comando <code>git clone</code> da seguinte forma:
 
-                                     git clone https://github.com/Edlavio/Edlavio.git
+                    git clone https://github.com/Edlavio/Edlavio.git
 
 ##### Não esqueça de alterar esse link para o do repositório que pretendes clonar.
   
 ## Criando uma branch
 Para criarmos uma branch chamada <code>repo</code> basta executar:
  
-                                                      git branch repo
+                     git branch repo
 ##### Não será exibida nenhuma resposta. Se listarmos as branches com o comando <code>git branch</code>, aparecerá as nossas branches.
 
 ## Trocando de branch
 Já criamos nossa branch <code>repo</code> mas ainda estamos na <code?>master</code>. Para trocarmos para a branch recentemente criada, devemos executar:
 
-                                                      git checkout repo
+                      git checkout repo
 
 ## Deletando uma branch
 Como não vamos usar a branch <code>master</code> se nós querer removê-la. Assim evitamos confusões e desperdício no nosso repositório.
 Para deletar uma branch, devemos utilizar a opção <code>-d</code> do <code>git branch</code> executando comando:
                                                                        
-                                                    git branch -d master
+                     git branch -d master
 
 ##### Não é possível remover uma branch enquanto estivermos nela. Por isso, devemos ir para outra branch. Para ir para a branch, devemos executar:
 
-                                                    git checkout nomedobranch
+                     git checkout nomedobranch
 
